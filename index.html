@@ -48,12 +48,12 @@
     }
     </style>
   </head>
-  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <body ng-app="restApp" class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
         </div>
-        <div ng-app="restApp" class="mdl-layout--large-screen-only mdl-layout__header-row">
+        <div ng-controller="GithubController" class="mdl-layout--large-screen-only mdl-layout__header-row">
           <h2>Nick Yelito</h2>
           <img class="img-circle" ng-src="{{data.avatar_url}}">
         </div>
@@ -97,7 +97,7 @@
           </section>
           
            <!-- Release Date Reminder CARD -->
-          <<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white" style="background: url('https://nyelito.github.io/images/releaseDateReminderWebIcon.png') center / cover;">
               <a target="_blank" href="https://www.youtube.com/watch?v=Kd7xKovUzdE" class="mdl-button mdl-js-button mdl-button--icon">
               <i class="material-icons">play_circle_filled</i>
