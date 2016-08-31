@@ -239,4 +239,6 @@ html, body {
 
 .img-circle {
   border-radius: 50%;
+  width:128px;
+  border:3px solid white;
 }
