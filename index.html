@@ -1,230 +1,106 @@
 <!doctype html>
-
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Developer page for Nick Yelito, showcasing current apps and contact info.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Nick Yelito</title>
-    
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-    <script src="javascripts/main.js"></script>
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Nick Yelito">
-    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
-
-    <link rel="shortcut icon" href="images/favicon.ico">
-
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nick Yelito — software developer.">
+  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f7f7f8" media="(prefers-color-scheme: light)">
+  <title>Nick Yelito</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f7f7f8;
+      --card: #ffffff;
+      --text: #111318;
+      --muted: #5b6070;
+      --border: #e4e5ea;
+      --accent: #4f46e5;
+      --accent-text: #ffffff;
+      --glow: rgba(79, 70, 229, 0.18);
     }
-    </style>
-  </head>
-  <body ng-app="restApp" class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
-        <div ng-controller="GithubController" class="mdl-layout--large-screen-only mdl-layout__header-row">
-          <img class="img-circle" src="https://avatars.githubusercontent.com/u/10520647?v=3">
-          <h2 style="padding: 8px 8px 8px 40px">Nick Yelito</h2>
-        </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-          <a href="#overview" class="mdl-layout__tab is-active">Portfolio</a>
-          <a href="#features" class="mdl-layout__tab">About</a>
-          <!--<a href="#features" class="mdl-layout__tab">Contact</a>-->
-          <a href="mailto:nyelitodev@gmail.com" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
-            <i class="material-icons" role="presentation">email</i>
-            <span class="visuallyhidden">Email</span>
-          </a>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="mdl-layout__tab-panel is-active" id="overview">
-          
-            <!-- VOLUME CONTROL CARD -->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--blue-100 mdl-color-text--white" style="background: url('https://nyelito.github.io/VolumeControl/img/web_hi_res_512.png') center / cover;">
-               <a target="_blank" href="https://www.youtube.com/watch?v=kZRh86EGJTA" class="mdl-button mdl-js-button mdl-button--icon">
-              <i class="material-icons">play_circle_filled</i>
-              </a>
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Volume Control for Assistant</h4>
-                Set the volume of Google Assistant independently of the volume of your phone! 
-              </div>
-              <div class="mdl-card__menu">
-                <i class="material-icons mdl-color-text--green">android</i>
-              </div>
-              <div class="mdl-card__actions">
-                <a target="_blank" href="https://nyelito.github.io/VolumeControl/" class="mdl-button mdl-button--accent">View app site</a>
-                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nyelito.volumecontrol" class="mdl-button mdl-button--accent">Play store</a>
-              </div>
-            </div>
-          </section>
-          
-          <!-- DACTYL CARD -->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white" style="background: url('https://nyelito.github.io/Dactyl/assets/ic_launcher.png') center / cover;">
-              <a target="_blank" href="https://www.youtube.com/watch?v=i1kv5iT_Qak" class="mdl-button mdl-js-button mdl-button--icon">
-              <i class="material-icons">play_circle_filled</i>
-              </a>
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Dactyl - Fingerprint Camera</h4>
-                Dactyl allows you to use your phone's fingerprint sensor to take photos with your favorite camera apps. 
-              </div>
-              <div class="mdl-card__menu">
-                <i class="material-icons mdl-color-text--green">android</i>
-              </div>
-              <div class="mdl-card__actions">
-                <a target="_blank" href="https://nyelito.github.io/Dactyl/" class="mdl-button mdl-button--accent">View app site</a>
-                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nyelito.dactyl" class="mdl-button mdl-button--accent">Play store</a>
-              </div>
-            </div>
-          </section>
-          
-            <!-- PIXEL ALARM WIDGET CARD -->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--indigo-200 mdl-color-text--white" style="background: url('https://nyelito.github.io/images/pixelalarmhires.png') center / cover;">
-<!--                <a target="_blank" href="https://www.youtube.com/watch?v=kZRh86EGJTA" class="mdl-button mdl-js-button mdl-button--icon">
-              <i class="material-icons">play_circle_filled</i>
-              </a> -->
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Pixel Alarm Widget</h4>
-                A sleek and simple widget to show your next alarm that blends into the Pixel Launcher.
-              </div>
-              <div class="mdl-card__menu">
-                <i class="material-icons mdl-color-text--green">android</i>
-              </div>
-              <div class="mdl-card__actions">
-                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nyelito.pixelalarmwidget" class="mdl-button mdl-button--accent">Play store</a>
-              </div>
-            </div>
-          </section>
-          
-           <!-- Release Date Reminder CARD -->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--indigo-100 mdl-color-text--white" style="background: url('https://nyelito.github.io/images/releaseDateReminderWebIcon.png') center / cover;">
-              <a target="_blank" href="https://www.youtube.com/watch?v=Kd7xKovUzdE" class="mdl-button mdl-js-button mdl-button--icon">
-              <i class="material-icons">play_circle_filled</i>
-              </a>
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Release Date Reminder</h4>
-                Quickly and easily set reminders for release dates of your favorite movies, DVD/BluRays, TV shows, and video games.
-              </div>
-              <div class="mdl-card__menu">
-                <i class="material-icons mdl-color-text--green">android</i>
-              </div>
-              <div class="mdl-card__actions">
-                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nyelito.remindmeapp" class="mdl-button mdl-button--accent">Play Store</a>
-              </div>
-            </div>
-          </section>
-           <!-- Lyzer CARD -->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--cyan-100 mdl-color-text--white" style="background: url('https://nyelito.github.io/images/lyzericon.png') center / cover;">
-              </a>
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Lyzer for Reddit</h4>
-                AnaLYZE and visuaLYZE any Reddit user's history including facial recognition, subreddit breakdowns, and an array of sorting options. Learn more about yourself or any other Redditor!
-              </div>
-              <div class="mdl-card__menu">
-                <i class="material-icons mdl-color-text--green">android</i>
-              </div>
-              <div class="mdl-card__actions">
-                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nyelito.postgraph" class="mdl-button mdl-button--accent">Play Store</a>
-              </div>
-            </div>
-          </section>
-
-        </div>
-        <div class="mdl-layout__tab-panel" id="features">
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-            <div class="mdl-card__title">
-              <h3>About</h3>
-              </div>
-              <div class="mdl-card__supporting-text">
-              I enjoy writing apps that I find useful or interesting myself. Below you can find my various profiles.
-              </div>
-              <br>
-              <br>
-              <br>
-              </div>
-              </section>
-              
-             <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-               <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-               <div class="mdl-card__title">
-                 <h2 class="mdl-card__title-text">Social Media</h2>
-               </div>
-               <div class="mdl-card__supporting-text">
-                 <a href="https://twitter.com/NickYelito" target="_blank" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"><img src="images/twitter-box.png" style="padding: 8px 8px 8px 8px">@NickYelito</a>
-                 <a href="https://plus.google.com/u/0/+NickYelito" target="_blank" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"><img src="images/google-plus-box.png" style="padding: 8px 8px 8px 8px">+Nick Yelito</a>
-                 <a href="https://www.linkedin.com/in/nick-yelito-56608127" target="_blank" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"><img src="images/linkedin-box.png" style="padding: 8px 8px 8px 8px">Nick Yelito</a>
-                 <a href="https://github.com/nyelito" target="_blank" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"><img src="images/github-box.png" style="padding: 8px 8px 8px 8px">nyelito</a>
-                </div>
-               </div>
-             </section>
-
-            </div>
-          <br>
-          <br>
-        
-        <footer class="mdl-mega-footer">
-          <div class="mdl-mega-footer--middle-section">
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <br>
-              <br>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a target="_blank" href="https://github.com/nyelito">GitHub</a></li>
-                <li>nyelitodev(at)gmail(dot)com</li>
-              </ul>
-            </div>
-          </div>
-        </footer>
-      </main>
-    </div>
-    <script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
-  </body>
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0d12;
+        --card: #13161d;
+        --text: #eef0f4;
+        --muted: #9aa0ae;
+        --border: #232733;
+        --accent: #818cf8;
+        --accent-text: #0b0d12;
+        --glow: rgba(129, 140, 248, 0.22);
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      background-image: radial-gradient(circle at 50% 0%, var(--glow), transparent 60%);
+      background-repeat: no-repeat;
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      width: 100%;
+      max-width: 440px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px 32px;
+      text-align: center;
+      box-shadow: 0 10px 40px -12px rgba(0, 0, 0, 0.15);
+    }
+    .avatar {
+      width: 112px;
+      height: 112px;
+      border-radius: 50%;
+      border: 3px solid var(--card);
+      box-shadow: 0 0 0 2px var(--accent);
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    h1 { font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; }
+    .role { color: var(--accent); font-weight: 500; margin-top: 4px; }
+    p.about { color: var(--muted); line-height: 1.6; margin: 20px 0 28px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 22px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: var(--accent-text);
+      font-weight: 500;
+      text-decoration: none;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 6px 20px -6px var(--accent); }
+    .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    .btn svg { width: 20px; height: 20px; fill: currentColor; }
+    footer { color: var(--muted); font-size: 0.85rem; margin-top: 24px; }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="avatar" src="https://github.com/nyelito.png" alt="Nick Yelito" width="112" height="112">
+    <h1>Nick Yelito</h1>
+    <div class="role">Software Developer</div>
+    <p class="about">I enjoy building apps that I find useful or interesting myself. Check out what I'm working on over on GitHub.</p>
+    <a class="btn" href="https://github.com/nyelito" target="_blank" rel="noopener">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      github.com/nyelito
+    </a>
+  </main>
+  <footer>&copy; <span id="y">2026</span> Nick Yelito</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
 </html>
